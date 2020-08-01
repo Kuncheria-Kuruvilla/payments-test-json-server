@@ -1,11 +1,33 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "hello"
+  "appConfig": {
+    "endPoints": {
+      "invoices": "invoices",
+      "vendors": "vendors"
+    },
+    "useCredit": true,
+    "columns": [
+        "vendor/name",
+        "invoice/item",
+        "invoice/bill",
+        "invoice/dues",
+        "vendor/credit"
+    ]
+  },
+  "vendors": [
+      {
+          "id":0,
+          "name":"Stark Industries",
+          "credit":1000
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "invoices":[
+      {
+          "id": 0,
+          "venderId":0,
+          "item": "Arc Reactor",
+          "bill": 500,
+          "dues": 500
+      }
+  ] 
 }
+
