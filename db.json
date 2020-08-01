@@ -10,16 +10,14 @@
         "invoice/item",
         "invoice/bill",
         "invoice/dues",
-        "vendor/credit",
-        "vendor/test"
+        "vendor/credit"
     ]
   },
   "vendors": [
       {
           "id":0,
           "name":"Stark Industries",
-          "credit":1000,
-          "test":"test val"
+          "credit":1000
     }
   ],
   "invoices":[
