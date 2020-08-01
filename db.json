@@ -6,28 +6,46 @@
     },
     "useCredit": true,
     "columns": [
-        "vendor/name",
-        "invoice/item",
-        "invoice/bill",
-        "invoice/dues",
-        "vendor/credit"
+      "vendor/name",
+      "invoice/item",
+      "invoice/bill",
+      "invoice/dues",
+      "vendor/credit"
     ]
   },
   "vendors": [
-      {
-          "id":0,
-          "name":"Stark Industries",
-          "credit":1000
+    {
+      "id": 0,
+      "name": "Stark Industries",
+      "credit": 1000
+    },
+    {
+      "id": 1,
+      "name": "Star Labs",
+      "credit": 0
     }
   ],
-  "invoices":[
-      {
-          "id": 0,
-          "venderId":0,
-          "item": "Arc Reactor",
-          "bill": 500,
-          "dues": 500
-      }
-  ] 
+  "invoices": [
+    {
+      "id": 0,
+      "venderId": 0,
+      "item": "Arc Reactor",
+      "bill": 500,
+      "dues": 500
+    },
+    {
+      "id": 1,
+      "venderId": 0,
+      "item": "Mark 16",
+      "bill": 1500,
+      "dues": 500
+    },
+    {
+      "id": 2,
+      "venderId": 1,
+      "item": "Particle Accelerator",
+      "bill": 700,
+      "dues": 500
+    }
+  ]
 }
-
